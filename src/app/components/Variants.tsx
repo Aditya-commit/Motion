@@ -30,9 +30,9 @@ const Variants = () => {
                     <AnimatePresence mode="wait">
                         {show
                         ?
-                        <motion.button initial={{scale : 1 , y : 0}} whileTap={{scale : 0.9 , y : 2}} transition={{type : 'spring' , bounce : 0.7}} className="bg-white px-6 py-2 rounded-lg text-black text-[15px]" onClick={toggle}>Hide</motion.button>
+                        <motion.button layoutId="btn" initial={{scale : 1 , y : 0}} whileTap={{scale : 0.9 , y : 2}} transition={{type : 'spring' , bounce : 0.7}} className="bg-white px-6 py-2 rounded-lg text-black text-[15px]" onClick={toggle}>Hide</motion.button>
                         :
-                        <motion.button initial={{scale : 1 , y : 0}} whileTap={{scale : 0.9 , y : 2}} transition={{type : 'spring' , bounce : 0.7}} className="bg-white px-6 py-2 rounded-lg text-black text-[15px]" onClick={toggle}>Show</motion.button>
+                        <motion.button layoutId="btn" initial={{scale : 1 , y : 0}} whileTap={{scale : 0.9 , y : 2}} transition={{type : 'spring' , bounce : 0.7}} className="bg-white px-6 py-2 rounded-lg text-black text-[15px]" onClick={toggle}>Show</motion.button>
                         }
                     </AnimatePresence>
                 </div>

@@ -1,6 +1,6 @@
-import { motion } from "motion/react";
 import Image from "next/image";
-import { useState } from "react";
+import {  useState } from "react";
+import { AnimatePresence, easeIn, motion } from "motion/react";
 
 const ITEMS = [
     { name : 'Tomato' , url : '/images/tomato.png' },
@@ -20,21 +20,30 @@ const ItemsSelector = () => {
                 <div className='grid grid-cols-3'>
                     {ITEMS.map((item , index) => (
                         <motion.button
-                            key={item.name}
-                            layoutId="item-btn"
+                            key={index}
                             whileTap={{scale : 0.9 , y : 3}}
-                            transition={{type : 'spring' , bounce : 0.4}} 
-                            className={`flex justify-center gap-x-2 p-3 cursor-pointer border-b ${index === itemIndex ? 'border-white' : 'border-blue-300'}`}
+                            className={`relative flex justify-center gap-x-2 p-3 cursor-pointer`}
                             onClick={()=>handleItemSelection(index)}
                         >
-                            <Image src={item.url} width={30} height={30} alt='' />
-                            <span className="text-black font-[500] text-[15px]">{item.name}</span>
+                            <Image src={item.url} width={30} height={30} alt='' className="z-10" />
+                            <span className="text-black font-[500] text-[15px] z-10">{item.name}</span>
+                            {index === itemIndex ? (
+                                <motion.div
+                                    layoutId='underline'
+                                    transition={{type : 'spring' , bounce : 0.5}}
+                                    className="border-b-2 border-blue-300 absolute top-0 left-0 w-full h-full bg-[#eee]"
+                                />
+                            ) : null }
                         </motion.button>
                     ))}
                 </div>
-                <motion.div>
-
-                </motion.div>
+                <div className='h-[85%] w-full flex items-center justify-center'>
+                    <AnimatePresence mode='wait'>
+                        <motion.div initial={{opacity : 0 , y : 20}} key={ITEMS[itemIndex]['name']} animate={{ opacity : 1 , y : 0}} exit={{opacity : 0 , y : -20}} transition={{duration : 0.3 , ease : easeIn}}>
+                            <Image src={ITEMS[itemIndex]['url']} width={100} height={100} alt={ITEMS[itemIndex]['name']} />
+                        </motion.div>
+                    </AnimatePresence>
+                </div>
             </div>
         </div>
     )
