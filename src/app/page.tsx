@@ -13,6 +13,7 @@ import LayoutAnimation from "./components/layoutAnimation";
 import ItemsSelector from "./components/itemsSelector";
 import ModalContainer from "./components/Modal";
 import AnimatePresenceInDepth from "./components/AnimatePresence";
+import CardPopup from "./components/CardPopup";
 
 const Home = () => {
 
@@ -39,6 +40,7 @@ const Home = () => {
       <ItemsSelector />
       <ModalContainer />
       <AnimatePresenceInDepth />
+      <CardPopup />
     </>
   )
 }

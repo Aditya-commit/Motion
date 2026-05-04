@@ -1,5 +1,7 @@
-import { AnimatePresence, circIn,  easeIn,  easeOut,  motion } from "motion/react";
+import { AnimatePresence ,  easeIn,  easeOut,  motion } from "motion/react";
 import { useState } from "react";
+
+// VARIANTS ARE BASICALLY USED TO TRIGGER CHILD ELEMENT ANIMATION FROM PARENT ELEMENT
 
 const parent = {
     hidden : {

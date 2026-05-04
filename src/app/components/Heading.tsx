@@ -5,6 +5,7 @@ import { motion } from "motion/react";
 const Heading = () => {
     return(
         <motion.h1
+            className="h-dvh"
             initial={{opacity : 0}}
             animate={{
                 opacity : 1,
