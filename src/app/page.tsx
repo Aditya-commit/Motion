@@ -14,6 +14,9 @@ import ItemsSelector from "./components/itemsSelector";
 import ModalContainer from "./components/Modal";
 import AnimatePresenceInDepth from "./components/AnimatePresence";
 import CardPopup from "./components/CardPopup";
+import ComponentInView from "./components/ComponentInView";
+import ScrollProgress from "./components/ScrollProgress";
+import ElementScrollPosition from "./components/ElementScrollPosition";
 
 const Home = () => {
 
@@ -41,6 +44,9 @@ const Home = () => {
       <ModalContainer />
       <AnimatePresenceInDepth />
       <CardPopup />
+      <ComponentInView />
+      <ScrollProgress />
+      <ElementScrollPosition />
     </>
   )
 }
