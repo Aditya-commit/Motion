@@ -19,6 +19,7 @@ import ScrollProgress from "./components/ScrollProgress";
 import ElementScrollPosition from "./components/ElementScrollPosition";
 import Navbar from "./components/Navbar";
 import Transform from "./components/Transform";
+import ScrollImageReveal from "./components/ScrollImageReveal";
 
 const Home = () => {
 
@@ -51,6 +52,7 @@ const Home = () => {
       <ScrollProgress />
       <ElementScrollPosition />
       <Transform />
+      <ScrollImageReveal />
     </>
   )
 }
