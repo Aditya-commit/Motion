@@ -20,6 +20,7 @@ import ElementScrollPosition from "./components/ElementScrollPosition";
 import Navbar from "./components/Navbar";
 import Transform from "./components/Transform";
 import ScrollImageReveal from "./components/ScrollImageReveal";
+import HorizontalScroll from "./components/HorizontalScroll";
 
 const Home = () => {
 
@@ -53,6 +54,7 @@ const Home = () => {
       <ElementScrollPosition />
       <Transform />
       <ScrollImageReveal />
+      <HorizontalScroll />
     </>
   )
 }
