@@ -17,6 +17,8 @@ import CardPopup from "./components/CardPopup";
 import ComponentInView from "./components/ComponentInView";
 import ScrollProgress from "./components/ScrollProgress";
 import ElementScrollPosition from "./components/ElementScrollPosition";
+import Navbar from "./components/Navbar";
+import Transform from "./components/Transform";
 
 const Home = () => {
 
@@ -26,6 +28,7 @@ const Home = () => {
 
   return(
     <>
+      <Navbar />
       <Heading />
       <Box />
       <InView />
@@ -47,6 +50,7 @@ const Home = () => {
       <ComponentInView />
       <ScrollProgress />
       <ElementScrollPosition />
+      <Transform />
     </>
   )
 }
