@@ -21,6 +21,9 @@ import Navbar from "./components/Navbar";
 import Transform from "./components/Transform";
 import ScrollImageReveal from "./components/ScrollImageReveal";
 import HorizontalScroll from "./components/HorizontalScroll";
+import Motion_Config from "./components/Motion_Config";
+import Times from "./components/Times";
+import VisualDuration from "./components/VisualDuration";
 
 const Home = () => {
 
@@ -55,6 +58,9 @@ const Home = () => {
       <Transform />
       <ScrollImageReveal />
       <HorizontalScroll />
+      <Motion_Config />
+      <Times />
+      <VisualDuration />
     </>
   )
 }
