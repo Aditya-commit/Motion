@@ -18,7 +18,7 @@ const HorizontalScroll = () => {
         <div className='flex justify-center h-[450vh] w-full' ref={ref}>
             <div className='flex flex-row sticky top-[12%] w-[600px] h-[600px] overflow-hidden bg-white'>
                 {IMAGE_URLS.map(url => (
-                    <motion.div className="flex-shrink-0 w-[600px] h-[600px] bg-white" style={{x}}>
+                    <motion.div key={url} className="flex-shrink-0 w-[600px] h-[600px] bg-white" style={{x}}>
                         <img
                             src={`/images/scrollTransform/${url}.jpg`}
                             className="w-full h-full object-cover"

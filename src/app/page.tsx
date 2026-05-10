@@ -24,6 +24,7 @@ import HorizontalScroll from "./components/HorizontalScroll";
 import Motion_Config from "./components/Motion_Config";
 import Times from "./components/Times";
 import VisualDuration from "./components/VisualDuration";
+import DragConstraints from "./components/Drag";
 
 const Home = () => {
 
@@ -61,6 +62,7 @@ const Home = () => {
       <Motion_Config />
       <Times />
       <VisualDuration />
+      <DragConstraints />
     </>
   )
 }
