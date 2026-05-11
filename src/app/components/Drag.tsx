@@ -12,6 +12,9 @@ const DragConstraints = () => {
                     drag
                     dragConstraints={refConstraint}
                     dragElastic={0.2}
+                    dragTransition={{
+                        bounceDamping : 1.2,
+                    }}
                     className='bg-pink-500 w-[100px] h-[100px] rounded'
                 />
             </motion.div>

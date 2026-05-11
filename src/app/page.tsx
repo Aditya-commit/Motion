@@ -25,6 +25,7 @@ import Motion_Config from "./components/Motion_Config";
 import Times from "./components/Times";
 import VisualDuration from "./components/VisualDuration";
 import DragConstraints from "./components/Drag";
+import DragExample from "./components/DragExample";
 
 const Home = () => {
 
@@ -63,6 +64,7 @@ const Home = () => {
       <Times />
       <VisualDuration />
       <DragConstraints />
+      <DragExample />
     </>
   )
 }
